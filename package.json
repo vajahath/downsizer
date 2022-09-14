@@ -14,7 +14,9 @@
     "downsizer": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prettier": "prettier . --write",
+    "lint": "eslint --fix ."
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +25,10 @@
     "@types/sharp": "^0.30.5",
     "@types/update-notifier": "^6.0.1",
     "@types/workerpool": "^6.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "prettier": "^2.7.1",
     "typescript": "^4.8.3"
   },
   "dependencies": {

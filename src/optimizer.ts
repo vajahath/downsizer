@@ -9,15 +9,17 @@ export async function optimizeImage(opt: {
 }) {
   const filePathDetails = parse(opt.inputFile);
 
-  if(!['.jpg', '.jpeg', '.webp', '.png'].includes(filePathDetails.ext)){
-    console.log(`🤔  [skipping unknown ${filePathDetails.ext}] ${opt.inputFile}`)
+  if (![".jpg", ".jpeg", ".webp", ".png"].includes(filePathDetails.ext)) {
+    console.log(
+      `🤔  [skipping unknown ${filePathDetails.ext}] ${opt.inputFile}`
+    );
     return;
   }
-  if(filePathDetails.name.includes('_downsized')){
-    console.log(`⛷️  [skipping already downsized] ${opt.inputFile}`)
+  if (filePathDetails.name.includes("_downsized")) {
+    console.log(`⛷️  [skipping already downsized] ${opt.inputFile}`);
     return;
   }
-  
+
   const imageBuffer = await readFile(opt.inputFile);
 
   const outputFile = await getOutputFilePath(opt.inputFile);

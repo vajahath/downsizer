@@ -44,7 +44,7 @@ export function createWorkerPool(quality?: number) {
 
   const workers: ChildProcess[] = [];
 
-  for (var i = 0; i < workerNumber; i++) {
+  for (let i = 0; i < workerNumber; i++) {
     const p = fork(join(__dirname, "optimizer.js"));
     console.log(chalk.gray(`⚙️  Creating worker ${i} pid: ${p.pid}`));
 

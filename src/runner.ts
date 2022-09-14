@@ -21,7 +21,7 @@ export function runner(INPUT_MATCH_STRING: string, quality?: number) {
 
   const optimizerStream = getOptimizerStream();
 
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     getListOfFilesStream(INPUT_MATCH_STRING)
       .pipe(optimizerStream)
       .on("close", () => {

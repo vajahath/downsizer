@@ -1,7 +1,7 @@
 {
   "name": "downsizer",
   "version": "1.0.0",
-  "description": "",
+  "description": "A tiny tool to reduce image size in bulk.",
   "main": "./dist/index.js",
   "type": "module",
   "exports": {

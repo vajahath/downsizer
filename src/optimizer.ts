@@ -14,7 +14,7 @@ export async function optimizeImage(opt: {
     return;
   }
   if(filePathDetails.name.includes('_downsized')){
-    console.log(`⛷️  [skipping already optimized] ${opt.inputFile}`)
+    console.log(`⛷️  [skipping already downsized] ${opt.inputFile}`)
     return;
   }
   
@@ -49,7 +49,7 @@ export async function optimizeImage(opt: {
 async function getOutputFilePath(inputFilePath: string) {
   const pathDetails = path.parse(inputFilePath);
   const fileNameWithOutExt = basename(inputFilePath, pathDetails.ext);
-  const baseDir = path.join(pathDetails.dir, "optimized");
+  const baseDir = path.join(pathDetails.dir, "downsized");
   await mkdirp(baseDir);
   const outputFilePath = path.join(
     baseDir,

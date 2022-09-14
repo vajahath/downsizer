@@ -7,7 +7,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, windows-latest, ubuntu-latest]
-        node: ["10", "12", "14", "16"]
+        node: ["14", "16"]
     runs-on: ${{ matrix.os }}
     name: build and test (${{ matrix.os }}|node-${{ matrix.node }})
 
@@ -20,4 +20,4 @@ jobs:
       - run: node --version
       - run: npm ci
       - run: npm run lint
-      - run: npm test
+      - run: npm run prettier

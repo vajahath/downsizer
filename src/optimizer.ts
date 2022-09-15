@@ -3,13 +3,19 @@ import path, { basename, parse } from "node:path";
 import sharp from "sharp";
 import mkdirp from "mkdirp";
 
+const fileFormats = [".jpg", ".jpeg", ".webp", ".png"];
+
+const allFileFormats = fileFormats.concat(
+  fileFormats.map((format) => format.toUpperCase())
+);
+
 export async function optimizeImage(opt: {
   inputFile: string;
   quality?: number;
 }) {
   const filePathDetails = parse(opt.inputFile);
 
-  if (![".jpg", ".jpeg", ".webp", ".png"].includes(filePathDetails.ext)) {
+  if (!allFileFormats.includes(filePathDetails.ext)) {
     console.log(
       `🤔  [skipping unknown ${filePathDetails.ext}] ${opt.inputFile}`
     );

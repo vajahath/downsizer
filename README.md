@@ -1,4 +1,4 @@
-# Downsizer
+# downsizer
 
 A tiny tool to reduce size of images in bulk. Helps you to bulk reduce size of images in a folder or individual images.
 

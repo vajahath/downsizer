@@ -6,7 +6,7 @@ A tiny tool to reduce size of images in bulk. Helps you to bulk reduce size of i
 
 - Install [Node.js](https://nodejs.org/en/) first.
 - Check Node.js is installed by running `node --version`
-- Then run `npx downsizer --version` or `npm install --global downsizer`
+- Then run `npx downsizer --version` or `npm install --global downsizer` (This will install downsizer to your machine from the [npm registry](https://www.npmjs.com/package/downsizer))
 
 ## Usage
 

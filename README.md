@@ -38,6 +38,8 @@ During the State Ijthima held on Karunagappally, Kerala, tons of photos were tak
 
 This tiny tool was made to reduce size of photos.
 
+Update (Nov 27, 2023): Latter this tool has been updated and used in AMJ Kollam, Alappy, Trivandrum District Conference photo management.
+
 ## Licence
 
 MIT &copy; Vajahath Ahmed

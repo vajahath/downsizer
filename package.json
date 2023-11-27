@@ -10,6 +10,10 @@
   "files": [
     "dist/**/*.js"
   ],
+  "engines": {
+    "node": "18"
+  },
+  "engineStrict": true,
   "bin": {
     "downsizer": "./dist/index.js"
   },
@@ -21,23 +25,21 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/mkdirp": "^1.0.2",
-    "@types/sharp": "^0.30.5",
-    "@types/update-notifier": "^6.0.1",
-    "@types/workerpool": "^6.1.0",
+    "@types/update-notifier": "^6.0.8",
+    "@types/workerpool": "^6.4.7",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
-    "@typescript-eslint/parser": "^5.37.0",
-    "eslint": "^8.23.1",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.54.0",
     "prettier": "^2.7.1",
-    "typescript": "^4.8.3"
+    "typescript": "^5.3.2",
+    "@types/node": "^20.10.0"
   },
   "dependencies": {
-    "@types/node": "^18.7.17",
-    "chalk": "^5.0.1",
-    "commander": "^9.4.0",
-    "globby": "^13.1.2",
-    "mkdirp": "^1.0.4",
-    "sharp": "^0.31.0",
-    "update-notifier": "^6.0.2"
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "globby": "^14.0.0",
+    "mkdirp": "^3.0.1",
+    "sharp": "^0.32.6",
+    "update-notifier": "^7.0.0"
   }
 }

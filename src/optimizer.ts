@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path, { basename, parse } from "node:path";
 import sharp from "sharp";
-import mkdirp from "mkdirp";
+import { mkdirp } from "mkdirp";
 
 const fileFormats = [".jpg", ".jpeg", ".webp", ".png"];
 
